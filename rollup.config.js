@@ -34,7 +34,7 @@ export default {
     resolve({
       mainFields: ["jsnext", "main"],
       browser: true,
-      preferBuiltins: true,
+      preferBuiltins: false,
       dedupe: importee =>
         importee === "svelte" || importee.startsWith("svelte/")
     }),
